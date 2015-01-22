@@ -1,1 +1,15 @@
 // Your footer style
+.footer {
+  font-size: 30px;
+  padding-bottom: 5px;
+  ul {
+    text-align: right;
+    margin-right: 5px;
+  }
+  a {
+    transition: all 0.3s linear;
+  }
+  a:hover{
+    color: $orange;
+  }
+}

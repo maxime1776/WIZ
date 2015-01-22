@@ -1,0 +1,116 @@
+$white: #fff;
+
+html {
+  color: $white;
+  font-family: $header-font;
+  font-size: 10px;
+  -webkit-font-smoothing: antialiased;
+
+  * { box-sizing: border-box; }
+
+  body {
+
+    section {
+      position: relative;
+      bottom:0px;
+      font-family: $header-font;
+      min-width: 100%;
+      height: 800px;
+      background-image: image-url('homerl.jpg');
+      background-size: cover;
+      margin-top: -20px;
+
+
+      article {
+        position: relative;
+        text-align: center;
+        transform: translate(0px, -50%);
+        top: 50%;
+
+        h1 {
+          font-size: 4rem;
+          font-family: $header-font;
+          font-weight: bold;
+          color: white;
+        }
+
+        h2 {
+          font-size: 2rem;
+          font-family: $header-font;
+          font-weight: 400;
+          line-height: 4rem;
+          color: white;
+
+        }
+        h4 {
+              font-size: 2rem;
+          font-weight: 200;
+          line-height: 2rem;
+          color: white;
+        p {
+          color:black;
+        }
+        }
+
+      }
+    }
+  }
+}
+#company {
+  padding-bottom: 6em;
+  padding-top: 6em;
+  background-image: image-url('homerl2.jpg');
+  color:white;
+  margin-top: -25px;
+}
+
+#company h2{
+  color:white;
+  margin:15px;
+}
+#realisations{
+  padding-bottom: 6em;
+  padding-top: 6em;
+  background-image: image-url('homerl3.jpg');
+  height: 800px;
+
+}
+#realisations h2{
+  color:black;
+  margin:15px;
+}
+
+#imghome2 {
+  margin-top:15px;
+  padding-bottom:45px;
+}
+
+.texte-home {
+  padding:5px;
+  padding-bottom:45px;
+  background-color: RGBA(0,0,0,0.8);
+  color:white;
+  margin-left:20px;
+
+}
+
+.row{
+  margin-top:30px;
+}
+
+
+.texte-home2 {
+  padding:5px;
+  padding-bottom:47px;
+  margin-top:20px;
+  background-color: RGBA(0,0,0,0.8);
+  color:white;
+  margin-left:20px;
+
+}
+
+.img-rounded{
+  padding:30px;
+  text-align:center;
+
+}
