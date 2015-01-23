@@ -1,10 +1,105 @@
 ---
-title: Welcome to Middleman
+title: REGIELUMIERE
 ---
 
-<div class="welcome">
-  <h1>Middleman is Watching</h1>
-  <p class="doc">
-    <%= link_to "Read Online Documentation", "http://middlemanapp.com/" %>
-  </p><!-- .doc -->
-</div><!-- .welcome -->
+<section>
+  <article>
+    <h1>REGIELUMIERE</h1>
+    <h2>Le spécialiste de l'éclairage scénique</h2>
+    <h4>Pour le spectacle et l'événementiel</h4>
+  </article>
+</section>
+
+<div id="company">
+  <h2>La société</h2>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-4">
+        <img src="http://placehold.it/390x340" class="img-ronded" id="imghome">
+        <img src="http://placehold.it/390x340" class="img-ronded" id="imghome2">
+      </div>
+      <div class="col-xs-12 col-sm-8">
+        <div class="texte-home">
+          <h1>Photo</h1>
+          <p>Le spécialiste de l'éclairage scénique<br>Pour le spectacle et l'événementiel</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis iste consequuntur quod eos cupiditate tempora rerum cumque deserunt libero non, vero, dolorum alias ex adipisci. Quae illum cupiditate sed quidem.
+          </p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis iste consequuntur quod eos cupiditate tempora rerum cumque deserunt libero non, vero, dolorum alias ex adipisci. Quae illum cupiditate sed quidem.</p>
+        </div>
+        <div class="texte-home2">
+          <h1>Photo</h1>
+          <p>Le spécialiste de l'éclairage scénique<br>Pour le spectacle et l'événementiel</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis iste consequuntur quod eos cupiditate tempora rerum cumque deserunt libero non, vero, dolorum alias ex adipisci. Quae illum cupiditate sed quidem.
+          </p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis iste consequuntur quod eos cupiditate tempora rerum cumque deserunt libero non, vero, dolorum alias ex adipisci. Quae illum cupiditate sed quidem.
+          </p>
+         </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="realisations">
+  <h2>Nos réalisations</h2>
+  <ul class="list-inline text-align:center">
+    <li>
+          <img src="http://placehold.it/200x150" alt="regielumiere1" class="img-rounded">
+          <h5>Attention à la Marche</h5>
+    </li>
+    <li>
+        <img src="http://placehold.it/200x150" alt="regielumiere1" class="img-rounded">
+        <h5>Attention à la Marche</h5>
+
+    </li>
+    <li>
+         <img src="http://placehold.it/200x150" alt="regielumiere1" class="img-rounded">
+         <h5>Attention à la Marche</h5>
+    </li>
+    <li>
+          <img src="http://placehold.it/200x150" alt="regielumiere1" class="img-rounded">
+          <h5>Attention à la Marche</h5>
+
+    </li>
+     <li>
+       <img src="http://placehold.it/200x150" alt="regielumiere1" class="img-rounded">
+       <h5>Attention à la Marche</h5>
+    </li>
+  </div>
+
+
+
+<script>
+
+  // Fade and friction settings below
+
+  var $window = $(window);
+  var scrollFade = function ($element, friction, offset) {
+    friction  = (friction  === undefined)? 0.5 : friction;
+    offset = (offset === undefined)? 0 : offset;
+
+    var parentHeight = $element.parent().outerHeight() * 0.5;
+    var previousOpacity = Infinity;
+
+    $window.scroll(function() {
+      var scrollTop = Math.max(0, $window.scrollTop())
+        , yOffset   = ($element.outerHeight() * -0.5) + scrollTop * friction
+        , opacity   = 1 - (scrollTop / parentHeight - (parentHeight * offset))
+
+      if (opacity < 0 && previousOpacity < 0) return;
+
+      $element.css({
+        transform: 'translate3d(0px,'+ yOffset +'px, 0)',
+        opacity: opacity
+      });
+
+      previousOpacity = opacity;
+    });
+  }
+
+  scrollFade($('article')
+    , 0.5  // Friction (0 ~ 1): lower = none
+    , 0    // Fade duration (0 ~ 1): lower = longer
+  );
+</script>
+
